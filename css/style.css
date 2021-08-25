@@ -181,6 +181,8 @@ nav a {
 	font-size:1.125rem;
 	border:.0625rem solid #33658A;
 	margin-bottom: 1.5rem;
+	border-radius: 0rem 2rem 0rem 2rem;
+
 }
 
 nav a:focus,
