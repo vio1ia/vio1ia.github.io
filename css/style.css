@@ -12,8 +12,36 @@ body {
     margin: 1.5rem auto;
     width:90%;
     min-width:56.25rem;
+	background-color: #d4d9ff;
+	background: linear-gradient(-45deg, #c7c1ff, #ffc5f4, #d4d9ff, #f5bbfb);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+		animation: gradient 15s ease infinite;
 }
 
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 /* Layout */
 
 main {
