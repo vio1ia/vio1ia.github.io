@@ -96,6 +96,20 @@ header, footer {
   border-bottom: .125rem solid #33658A;
 }
 
+header .logo {
+	color: fffff;
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 4.5rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+a {
+	outline:none;
+	color:white;
+}
+
 /* ------ START WRITING YOUR CODE BELOW THIS LINE ------ */
 
 /* NO changes should be made to any of the code above. */
@@ -132,7 +146,7 @@ h1{
 	font-family: Josefinslab, Garamond, serif;
 	letter-spacing: .125rem;
 	font-size: 3.75rem;
-	text-align: center;
+	text-align: left;
 	margin:1.125rem;
 	
 }
@@ -170,7 +184,7 @@ a {
 
 a:link,
 a:visited {
-	color:#33658A
+	color:#000000
 }
 
 a:focus,
