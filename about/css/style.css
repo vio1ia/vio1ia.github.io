@@ -93,6 +93,12 @@ header, footer {
 	font-style: normal;
 }
 
+@font-face {
+	font-family: Trebuchet;
+	src: url(fonts/trebuc.ttf) format('trueType');
+	font-weight: normal;
+	font-style: normal;
+}
 
 /* Typography Styles */
 
