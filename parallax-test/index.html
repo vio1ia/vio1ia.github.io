@@ -1,34 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Livi Lanza">
-        <title>Ongoing Projects</title>
-        
-        <link href="css/style.css" rel="stylesheet">
-    
-    <body>
 
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300&family=Source+Code+Pro:wght@200&display=swap"
+		rel="stylesheet">
+
+	<script src ="https://cdn.jsdelivr.net/npm/kute/js@2.1.2/dist/kute.min.js"></script>
+
+	<style>
+		body {
+			margin: 0;
+			font-family: 'Source Code Pro', monospace;
+			color: white;
+			background: black;
+			overflow-x: hidden;
+		}
+
+		section {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			min-height: 400px;
+			padding: 100px 20vw;
+		}
+
+		.blue {
+			background: #3c31dd;
+		}
+
+		.red {
+			background: #dd3f31;
+		}
+
+		.pink {
+			background: #ff0066
+		}
+
+		.dark {
+			background: #000000
+		}
+
+		.curve {
+			position: absolute;
+			height: 225px;
+			width: 100%;
+			bottom: 0;
+		}
+
+		.curve::before {
+			content: '';
+			display: block;
+			position: absolute;
+			border-radius: 100% 50%;
+			width: 55%;
+			height: 100%;
+			background-color: #000000;
+			transform: translate(85%, 60%);
+		}
+
+		.curve::after {
+			content: '';
+			display: block;
+			position: absolute;
+			border-radius: 100% 50%;
+			width: 55%;
+			height: 100%;
+			background-color: #3c31dd;
+			transform: translate(-4%, 40%);
+			z-index: -1;
+
+		}
+
+		.bubble::after {
+			content: '';
+			border-top-left-radius: 50% 100%;
+			border-top-right-radius: 50% 100%;
+			position: absolute;
+			bottom: 0;
+			height: 85%;
+			width: 100%;
+			background-color: #0f0f10;
+			z-index: -1;
+
+		}
+
+		.wave {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			overflow: hidden;
+			line-height: 0;
+		}
+
+		.flip {
+			transform: rotate(180deg);
+		}
+	</style>
+
+</head>
+
+
+<body>
+	<section class="blue">
+		<h1>Example</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In voluptatibus ducimus dolorum sint. Excepturi
+			rerum ipsum debitis. Odit ad omnis natus eaque culpa. At, nihil suscipit. Officiis aliquid libero eius!</p>
+		<div class="curve"></div>
+	</section>
+	<section class="bubble">
+		<h1>Example</h1>
+		<p>Suscipit illum id cumque natus sed reprehenderit delectus at laudantium quam atque! Corrupti iusto porro
+			fugiat praesentium dolor! Autem dolorem beatae dolor odit! Aperiam, distinctio. Expedita illum itaque sunt
+			accusamus.</p>
+	</section>
+	<section class="dark">
+		<h1>Example</h1>
+		<p>Nemo illum magnam est dolorem unde. Totam illo est, quisquam, dicta, delectus eos quia illum eligendi optio
+			consequatur perferendis odit laborum et veniam sed voluptatem nesciunt voluptatum at obcaecati quidem!</p>
+	</section>
+	<section class="red">
+		<h1>Example</h1>
+		<p>Ratione praesentium beatae consequuntur corporis repellat amet debitis fuga asperiores repudiandae nemo enim
+			maiores quod, iusto, dolorum unde! Fuga, laboriosam atque ullam nesciunt tempore et repellat consequuntur
+			veritatis consectetur error.</p>
+		<div class="wave">
+			<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+				preserveAspectRatio="none">
+				<path
+					d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+					opacity=".25" class="shape-fill"></path>
+				<path
+					d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+					opacity=".5" class="shape-fill"></path>
+				<path
+					d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+					class="shape-fill"></path>
+			</svg>
+		</div>
+	</section>
+	<div class="space layer2 flip"></div>
+	<section class="pink">
+		<h1>Example</h1>
+		<p>Ipsa maiores itaque tenetur, laborum placeat ut alias iusto at harum blanditiis, consectetur quia sint quasi
+			exercitationem modi? Voluptatem voluptates similique qui tempore neque est aliquid assumenda minima amet
+			asperiores.</p>
+	</section>
+	<div class="space layer2"></div>
+	<section>
+		<h1>Example</h1>
+		<p>Excepturi, nostrum ad. Qui excepturi reiciendis temporibus quibusdam rem fuga. Eligendi, temporibus?
+			Inventore deleniti quidem ipsa quisquam quia magni, voluptatum culpa, non earum rerum, necessitatibus
+			expedita maiores quam amet molestias.</p>
+		<svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg"
+			xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+			
+			<g transform="translate(486.1659310070529 256.8008837517889)">
+				<path id="blob1"
+					d="M138 -135.3C165.6 -110.3 165.8 -55.2 157.9 -7.9C150 39.4 134.1 78.7 106.4 128.7C78.7 178.7 39.4 239.4 -3.8 243.1C-46.9 246.9 -93.8 193.8 -139.5 143.8C-185.1 93.8 -229.6 46.9 -234.3 -4.7C-239 -56.3 -204 -112.7 -158.3 -137.7C-112.7 -162.7 -56.3 -156.3 -0.6 -155.8C55.2 -155.2 110.3 -160.3 138 -135.3"
+					fill="#BB004B"></path>
+					
+			</g>
+
+			<g transform="translate(435.5489086360722 297.1631560564221)"><path id="blob2" d="M89.8 -147.2C112.5 -125.1 124.5 -93.7 155.9 -60.7C187.3 -27.7 238.2 6.9 250.2 47.4C262.2 88 235.4 134.3 194.8 153.2C154.2 172 99.8 163.2 55.8 164.5C11.8 165.7 -21.7 176.9 -67 183.9C-112.4 190.9 -169.6 193.7 -197.6 167.7C-225.7 141.7 -224.7 86.9 -223.9 37.3C-223.1 -12.3 -222.5 -56.9 -202.6 -89.1C-182.6 -121.4 -143.2 -141.5 -106.2 -157.1C-69.2 -172.7 -34.6 -183.8 -0.5 -183C33.5 -182.2 67 -169.3 89.8 -147.2" fill="#BB004B"></path></g>
+		</svg>
+
+		<script>
+			const tween = KUTE.fromTo(
+				'#blob1',
+				{ path: '#blob1' },
+				{ path: '#blob2' },
+				{ repeat: 999, duration: 3000, yoyo: true }
 		
-	
-		<header>
-			<a href="#" class="logo">VIT (example)</a>
-			<ul>
-				<li><a href="#">Example 1</a></li>
-				<li><a href="#">Example 2</a></li>
-				<li><a href="#">Example 3</a></li>
-				<li><a href="#">Example 4</a></li>
-			</ul>
-		</header>
-		<section>
-			<img src="clouds.png" id="clouds">
-			<img src="moon.png" id="moon">
-			<img src="rock.png" id="rock">
-			<img src="rock2.png" id="rock2">
-		</section>
-		<footer>
-            <p>VIT &copy; 2021</p>
-        </footer>
-	</body>
+			)
+			tween.start()
+		</script>
+	</section>
+	<section>
+		<h1>Example</h1>
+		<p>Earum, aspernatur a ipsa sed facere animi ipsum vel repudiandae nisi fugit odit possimus. Tempore iste
+			excepturi veniam nisi placeat molestiae perferendis laborum architecto? Magni corporis aliquid laudantium
+			ullam consectetur.</p>
+	</section>
+	<section>
+		<h1>Example</h1>
+		<p>Quam impedit accusamus, similique, necessitatibus iure eligendi aut odit cupiditate voluptas magnam minima
+			odio animi veniam unde expedita quos quaerat doloremque, rerum fugit! Quia et fuga repudiandae nam
+			blanditiis ratione?</p>
+	</section>
+</body>
+
 </html>
