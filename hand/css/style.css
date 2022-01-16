@@ -119,6 +119,11 @@ h2 + p {
 	text-indent: 1rem;
 }
 
+h3 {
+	font-family: Josefinslab, Garamond, serif;
+	font-size: 1rem;
+}
+
 p,
 li {
 	font-size: .75rem;
