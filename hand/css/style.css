@@ -11,8 +11,17 @@ html {
 body {
     margin: 1.5rem auto;
     width:90%;
+	background-color: #99a8d1;
+	color: #fff;
 
-	text-overflow: 30%;
+}
+
+button {
+	background-color: #33658A;
+	border-radius: 25%;
+	padding: 15px 32px;
+	border: none;
+	color: #FFF;
 }
 
 /* Layout */
@@ -153,6 +162,10 @@ a:visited {
 }
 
 a:focus,
+
+img {
+	border: 5px solid #555;
+}
 
 
 /* List Styling */
