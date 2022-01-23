@@ -217,7 +217,10 @@ nav a:active{
 } 
 
 
-
+.dots {
+	border: 5px solid rgb(213, 215, 241);
+	border-style: dotted;
+  }
 
 /* Footer Styles */
 
