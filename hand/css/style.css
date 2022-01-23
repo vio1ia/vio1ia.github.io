@@ -11,18 +11,11 @@ html {
 body {
     margin: 1.5rem auto;
     width:90%;
+    min-width:56.25rem;
 	background-color: #99a8d1;
-	color: #fff;
-
+	color: #ffffff;
 }
 
-button {
-	background-color: #33658A;
-	border-radius: 25%;
-	padding: 15px 32px;
-	border: none;
-	color: #FFF;
-}
 
 /* Layout */
 
@@ -78,6 +71,20 @@ header, footer {
   border-bottom: .125rem solid #33658A;
 }
 
+header .logo {
+	color: fffff;
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 4.5rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+a {
+	outline:none;
+	color:white;
+}
+
 /* ------ START WRITING YOUR CODE BELOW THIS LINE ------ */
 
 /* NO changes should be made to any of the code above. */
@@ -104,6 +111,7 @@ header, footer {
 }
 
 
+
 /* Typography Styles */
 
 html{
@@ -111,10 +119,10 @@ html{
 	
 }
 h1{
-	font-family: Josefinslab, Garamond, serif;
+	font-family: 'Courgette', cursive;
 	letter-spacing: .125rem;
 	font-size: 3.75rem;
-	text-align: center;
+	text-align: left;
 	margin:1.125rem;
 	
 }
@@ -123,16 +131,10 @@ h2{
 	font-family: Josefinslab, Garamond, serif;
 	letter-spacing: .125rem;
 	font-size: 1.5rem;
-	
 }
 
 h2 + p {
 	text-indent: 1rem;
-}
-
-h3 {
-	font-family: Josefinslab, Garamond, serif;
-	font-size: 1rem;
 }
 
 p,
@@ -144,7 +146,7 @@ li {
 }
 
 figcaption {
-	font-size:.75rem;
+	font-size:.5rem;
 	margin-bottom: 2rem;
 }
 
@@ -158,15 +160,13 @@ a {
 
 a:link,
 a:visited {
-	color:#33658A
+	color:#ffffff
 }
 
 a:focus,
-
-img {
-	border: 5px solid #555;
+a:hover {
+	color:#ffffff;
 }
-
 
 /* List Styling */
 
@@ -199,8 +199,10 @@ nav a {
 	line-height:3;
 	text-align:center;
 	font-size:1.125rem;
-	border:.0625rem solid #33658A;
+	border:.0625rem solid #ffffff;
 	margin-bottom: 1.5rem;
+	border-radius: 0rem 2rem 0rem 2rem;
+
 }
 
 nav a:focus,
@@ -225,15 +227,6 @@ footer {
 
 
 
-.float-container {
-    border: 3px solid #fff;
-    padding: 20px;
-}
 
-.float-child {
-    width: 50%;
-    float: left;
-    padding: 20px;
-    border: 2px solid rgb(0, 217, 255);
-}  
+
 
