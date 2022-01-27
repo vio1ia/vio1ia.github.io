@@ -110,7 +110,19 @@ a {
 	font-style: normal;
 }
 
+@font-face {
+	font-family: Parisienne;
+	src: url(fonts/Parisienne-Regular.ttf) format('trueType');
+	font-weight: normal;
+	font-style: normal;
+} 
 
+@font-face {
+	font-family: Pacifico;
+	src: url(fonts/Pacifico-Regular.ttf) format('trueType');
+	font-weight: lighter;
+	font-style: normal;
+}
 
 /* Typography Styles */
 
@@ -135,6 +147,10 @@ h2{
 
 h2 + p {
 	text-indent: 1rem;
+}
+
+h3 {
+	font-family: Pacifico, Garamond, cursive;
 }
 
 p,
